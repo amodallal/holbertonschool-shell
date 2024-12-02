@@ -1,1 +1,1 @@
-pwd
+basename $(pwd)
