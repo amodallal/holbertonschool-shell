@@ -1,2 +1,2 @@
 #!/bin/bash
--maxdepth 1 -type f -print | xargs ls -lt | head -n 10
+find . -maxdepth 1 -type f -printf "%f\n" | xargs ls -t | head -n 10
