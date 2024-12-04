@@ -1,2 +1,2 @@
 #!/bin/bash
-if [ -f iacta ] then set -- $(head -n 3 iacta) echo $3 else echo "File 'iacta' does not exist." fi
+head -n 3 iacta | tail -1
