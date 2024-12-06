@@ -1,2 +1,2 @@
 #!/bin/bash
-tr ' ' '\n' < filename | sort | uniq -u
+tr ' ' '\n' < list | sort | uniq -u
