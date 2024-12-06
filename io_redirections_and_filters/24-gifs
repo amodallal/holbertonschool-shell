@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f \( -name "*.gif" -o -name ".*.gif" \) -exec ls -lS {} + | sort -f -k 9 | awk -F'.gif' '{print $1}'
+find . -type f \( -name "*.gif" -o -name ".*.gif" \) | xargs -I {} basename {} .gif
